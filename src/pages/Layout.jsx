@@ -5,6 +5,7 @@ import Products from "./Products";
 import Demo from "./Demo";
 import PatientJourney from "./PatientJourney";
 import Contact from "./Contact";
+import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
@@ -15,6 +16,7 @@ const Layout = () => {
       <Demo />
       <PatientJourney />
       <Contact />
+      <Footer />
     </div>
   );
 };
