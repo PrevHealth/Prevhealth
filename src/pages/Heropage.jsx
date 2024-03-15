@@ -4,6 +4,7 @@ import LanguageSelector from "../components/Dropdown";
 import { useLanguage } from "../context/LanguageContext";
 import Button from "../components/Button";
 import { HeropageEnglishData, HeropageSwedishData } from "../Data/HeropageData";
+import Meet from "../components/Meet";
 
 const Heropage = () => {
   const { language, changeLanguage } = useLanguage();
@@ -23,7 +24,7 @@ const Heropage = () => {
   return (
     <section className="bg-[#E3ECED]  min-h-screen w-screen pb-5 ">
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center ">
-        <div className=" flex flex-col justify-center gap-8 w-full bg-blac  p-5 lg:pl-32  ">
+        <div className=" flex flex-col justify-center gap-8 w-full  p-5 lg:pl-32  ">
           <div className="">
             {language === "en" && (
               <span className="lg:text-[48px] text-[32px] font-bold text-primary">
@@ -35,7 +36,7 @@ const Heropage = () => {
               </span>
             )}
             {language === "swe" && (
-              <span className="text-[48px] font-bold text-primary">
+              <span className="lg:text-[48px] text-[32px] font-bold text-primary">
                 Revolutionera Patientvård <br /> med
                 <span className="ml-3 text-secondary ">
                   AI-driven Hälsovård
@@ -63,10 +64,11 @@ const Heropage = () => {
               </span>
             )}
           </div>
-          <div className="flex justify-center lg:justify-start ">
+          <div className="flex justify-cente justify-start ">
             <Button>
-              {language === "en" && "Book a demo"}
-              {language === "swe" && "Boka en demo"}
+              <span className="text-[20px]">
+                <Meet />
+              </span>
             </Button>
           </div>
         </div>

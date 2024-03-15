@@ -5,6 +5,7 @@ import LanguageSelector from "./Dropdown";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
+import Meet from "./Meet";
 const Navbar = () => {
   const { language, changeLanguage } = useLanguage();
   const [show, setShow] = useState(false);
@@ -59,8 +60,7 @@ const Navbar = () => {
         <div className="hidden lg:flex gap-10 justify-center items-center">
           <div>
             <Button>
-              {language === "en" && "Book a demo"}
-              {language === "swe" && "Boka en demo"}
+              <Meet />
             </Button>
           </div>
           <div>
