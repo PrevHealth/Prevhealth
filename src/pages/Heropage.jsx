@@ -21,13 +21,14 @@ const Heropage = () => {
   }
 
   return (
-    <section className="bg-[#E3ECED]  min-h-screen w-screen">
-      <div className="flex justify-between items-center ">
-        <div className=" flex flex-col justify-center gap-8 w-full bg-blac  pl-32  ">
+    <section className="bg-[#E3ECED]  min-h-screen w-screen pb-5 ">
+      <div className="flex lg:flex-row flex-col-reverse justify-between items-center ">
+        <div className=" flex flex-col justify-center gap-8 w-full bg-blac  p-5 lg:pl-32  ">
           <div className="">
             {language === "en" && (
-              <span className="text-[48px] font-bold text-primary">
-                Revolutionize Patient Care <br /> with
+              <span className="lg:text-[48px] text-[32px] font-bold text-primary">
+                Revolutionize Patient Care <br className="lg:flex hidden " />{" "}
+                with
                 <span className="ml-3 text-secondary ">
                   AI-powered Healthcare
                 </span>
@@ -62,8 +63,7 @@ const Heropage = () => {
               </span>
             )}
           </div>
-          <div className=""></div>
-          <div>
+          <div className="flex justify-center lg:justify-start ">
             <Button>
               {language === "en" && "Book a demo"}
               {language === "swe" && "Boka en demo"}
@@ -76,11 +76,11 @@ const Heropage = () => {
       </div>
       <div>
         <Container>
-          <div className="flex justify-between flex-col lg:flex-row items-center gap-10 mt-5 lg:-mt-10 ">
+          <div className="flex justify-between flex-col lg:flex-row items-center gap-10 mt-5 ">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col lg:w-auto items-center rounded-xl bg-white p-3 justify-center gap-2"
+                className="flex flex-col lg:w-auto items-center rounded-xl bg-white w-[80vw] p-3 justify-center gap-2"
               >
                 <span className="text-[30px] font-bold text-primary">
                   {item.text}

@@ -6,7 +6,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { ContactEnglishData, ContactSwedishData } from "../Data/ContactData";
 
 const Contact = () => {
-  const { language, changeLanguage } = useLanguage();
+  const { language } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,6 +38,7 @@ const Contact = () => {
             email: "",
             companyName: "",
             message: "",
+            country: "",
           });
           setTimeout(() => {
             setShowToast(false);
@@ -136,7 +137,7 @@ const Contact = () => {
                       id="name"
                       required
                       name="name"
-                      value={formData.name}
+                      value={formData.country}
                       onChange={handleChange}
                       className="mt-1 p-2 w-full border border-gray-300 rounded-md"
                     />

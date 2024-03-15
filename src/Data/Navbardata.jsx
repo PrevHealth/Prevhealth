@@ -5,15 +5,17 @@ export const NavEnglishData = [
   },
   {
     title: "Patient journey",
-    to: "Patient journey",
+    to: "Patient-journey",
+  },
+
+  {
+    title: "Faq",
+    to: "faq",
   },
   {
     title: "About us",
     to: "About",
-  },
-  {
-    title: "Careers",
-    to: "Careers",
+    path: "/about-us",
   },
 ];
 export const NavSwedishData = [
@@ -23,14 +25,20 @@ export const NavSwedishData = [
   },
   {
     title: "Patientresa",
-    to: "Patient journey",
+    to: "Patient-journey",
+  },
+
+  // {
+  //   title: "Karriär",
+  //   to: "Careers",
+  // },
+  {
+    title: "Faq",
+    to: "faq",
   },
   {
     title: "Om oss",
     to: "About",
-  },
-  {
-    title: "Karriär",
-    to: "Careers",
+    path: "/about-us",
   },
 ];

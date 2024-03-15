@@ -34,7 +34,7 @@ const PatientJourney = () => {
         {data.map((item, index) => {
           return (
             <>
-              <PatientJourneyCard data={item} key={index} />
+              <PatientJourneyCard data={item} key={item.id}/>
             </>
           );
         })}

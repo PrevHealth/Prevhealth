@@ -6,17 +6,25 @@ import Demo from "./Demo";
 import PatientJourney from "./PatientJourney";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import Faq from "./Faq";
+import { Element } from "react-scroll";
 
 const Layout = () => {
   return (
     <div className="overflow-hidden">
-      <Navbar />
       <Heropage />
-      <Products />
+
+      <Element className="product">
+        <Products />
+      </Element>
       <Demo />
-      <PatientJourney />
+      <Element className="Patient-journey">
+        <PatientJourney />
+      </Element>
+      <Element className="faq">
+        <Faq />
+      </Element>
       <Contact />
-      <Footer />
     </div>
   );
 };
