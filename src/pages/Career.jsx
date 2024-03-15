@@ -31,7 +31,12 @@ const Career = () => {
               </div>
             </div>
             <div className="lg:px-36">
-              <Button>Contact Us</Button>
+              <Button>
+                <Link to="contact" smooth={true} offset={-100} duration={500}>
+                  {language === "en" && "Contact Us"}
+                  {language === "swe" && "Kontakta oss"}
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

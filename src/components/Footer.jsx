@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="">
-                    Kungsgatan 8, <br /> 111 43 Stockholm, <br /> Sweden
+                    Idungränd 8, <br /> 187 73 Täby <br /> Sweden
                   </span>
                 </div>
               </div>

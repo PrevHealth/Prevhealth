@@ -8,6 +8,8 @@ import Contact from "./Contact";
 import Footer from "../components/Footer";
 import Faq from "./Faq";
 import { Element } from "react-scroll";
+import Caregiver from "./Caregiver";
+import CoustmerStory from "./CoustmerStory";
 
 const Layout = () => {
   return (
@@ -21,10 +23,16 @@ const Layout = () => {
       <Element className="Patient-journey">
         <PatientJourney />
       </Element>
+      <Element className="caregiver">
+      <Caregiver/>
+      </Element>
+      <CoustmerStory />
       <Element className="faq">
         <Faq />
       </Element>
-      <Contact />
+      <Element className="contact">
+        <Contact />
+      </Element>
     </div>
   );
 };

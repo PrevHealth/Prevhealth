@@ -100,7 +100,7 @@ const Navbar = () => {
         className=""
       >
         {show && (
-          <div className="bg-white rounded-2xl w-screen right-0 border fixed mt-14 ">
+          <div className="bg-white lg:hidden rounded-2xl w-screen right-0 border fixed mt-14 ">
             <div className="pt-4">
               {data.map((item, index) => (
                 <div
@@ -121,7 +121,7 @@ const Navbar = () => {
                     <Link
                       spy={true}
                       smooth={true}
-                      offset={-70} // Adjust this offset to suit your layout
+                      offset={-100} // Adjust this offset to suit your layout
                       duration={500}
                       to={item.to}
                       className="font-medium"

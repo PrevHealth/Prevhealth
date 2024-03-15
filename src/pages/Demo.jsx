@@ -3,6 +3,7 @@ import { DemoEnglishData, DemoSwedishData } from "../Data/DemoData";
 import { useLanguage } from "../context/LanguageContext";
 import Container from "../components/Container";
 import Button from "../components/Button";
+import Meet from "../components/Meet";
 
 const Demo = () => {
   const { language } = useLanguage();
@@ -28,19 +29,20 @@ const Demo = () => {
           <div className="mt-1">
             {language === "en" && (
               <span className="font-semibold text-[24px] text-secondary ">
-                Boost Efficiency <br /> Reduce Costs <br /> Empower
+                Boost Efficiency <br />
+                Reduce Costs <br /> Empower
               </span>
             )}
             {language === "swe" && (
               <span className="font-semibold text-[24px] text-secondary ">
-                Öka effektiviteten <br /> Minska kostnaderna <br /> Befordra
+                Öka effektiviteten <br />
+                Minska kostnaderna <br /> Befordra
               </span>
             )}
           </div>
           <div className="mt-3">
             <Button>
-              {language === "en" && "Schedule a Demo"}
-              {language === "swe" && "Boka en demo"}
+              <Meet />
             </Button>
           </div>
         </div>

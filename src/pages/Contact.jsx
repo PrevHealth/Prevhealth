@@ -96,8 +96,8 @@ const Contact = () => {
                         <h1 className="">
                           {data.id === 2 && (
                             <p>
-                              Kungsgatan 8, <br />
-                              111 43 Stockholm <br />
+                              Idungränd 8, <br />
+                              187 73 Täby <br />
                               Sweden
                             </p>
                           )}
