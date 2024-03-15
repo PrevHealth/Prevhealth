@@ -20,23 +20,23 @@ const Footer = () => {
     <div className="bg-[#E3ECED] mt-12 ">
       <Container>
         <section className="">
-          <div className=" flex p-12 justify-center gap-12 items-center ">
+          <div className=" flex flex-col lg:flex-row  lg:p-12 p-5 lg:justify-center lg:gap-12 gap-4 lg:items-center ">
             {data.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="flex  justify-center items-center gap-5"
+                  className="flex  lg:justify-center lg:items-center lg:gap-5"
                 >
                   <p className=" font-medium  ">{item.title}</p>
                 </div>
               );
             })}
           </div>
-          <div className="p-2 flex justify-between">
+          <div className="p-2 flex flex-col mb-9 lg:mb-0  lg:flex-row justify-between">
             <div>
               <img src="/logo/logo.png" alt="" />
             </div>
-            <div className="flex gap-16">
+            <div className="flex lg:flex-row flex-col-reverse gap-5 mt-9 lg:mt-0 lg:gap-16">
               <div className="flex gap-2">
                 <div>
                   <img src="/Contact/icon1.png" alt="" />
@@ -45,12 +45,12 @@ const Footer = () => {
                   <span>contact@preveu.com</span>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex lg:justify-center items-start gap-2">
                 <div>
                   <img src="/Contact/icon2.png" className="" alt="" />
                 </div>
                 <div>
-                  <span>
+                  <span className="">
                     Kungsgatan 8, <br /> 111 43 Stockholm, <br /> Sweden
                   </span>
                 </div>
