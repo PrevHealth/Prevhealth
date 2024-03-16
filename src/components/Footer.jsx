@@ -35,7 +35,7 @@ const Footer = () => {
                     </NavLink>
                   ) : (
                     <Link
-                      to={item.path}
+                      to={item.to}
                       offset={-100}
                       smooth={true}
                       duration={500}

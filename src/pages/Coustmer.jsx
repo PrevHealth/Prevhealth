@@ -21,11 +21,11 @@ const Coustmer = () => {
 
   return (
     <div className="">
-    <SecNav/>
+      <SecNav />
       <section className="min-h-screen bg-[#E3ECED] pb-5">
         <Container>
-          <section className="pt-16 flex lg:flex-row flex-col  gap-10">
-            <div className="flex flex-col gap-8 mt-5 w-full">
+          <section className="pt-16 lg:pt-24 flex  justify-center bg-blac lg:flex-row flex-col lg:gap-20  gap-10">
+            <div className="flex flex-col gap-8 lg:gap-10 mt-5 w-full">
               <h1 className="fontb text-primary">
                 {language === "en" && "Customer story"}
                 {language === "swe" && "Kundberättelse"}
@@ -43,8 +43,8 @@ const Coustmer = () => {
               </span>
             </div>
 
-            <div className="flex flex-col gap-10 lg:w-full lg:justify-center lg:items-center">
-              <div className="flex items-start gap-3">
+            <div className="flex flex-col gap-10 lg:w-ful lg:w-1/2 lg:justify-center ">
+              <div className="flex  gap-3 ">
                 <div>
                   <img src="/Coustmer/location.png" alt="" />
                 </div>
@@ -65,30 +65,30 @@ const Coustmer = () => {
                   )}
                 </span>
               </div>
-              <div className="flex gap-3 items-start ">
+              <div className="flex gap-3   ">
                 <div>
                   <img src="/Coustmer/service.png" alt="" />
                 </div>
-                <span>
-                  {language === "en" && (
-                    <span className="text-secondary text-[20px]">
-                      Service
-                      <br />
-                      <b className="text-primary">
-                        Women’s <br className="hidden lg:flex" /> health
-                      </b>
-                    </span>
-                  )}
-                  {language === "swe" && (
-                    <span className="text-secondary text-[20px]">
-                      Service
-                      <br />
-                      <b className="text-primary">
-                        Kvinnors <br className="hidden lg:flex" /> hälsa
-                      </b>
-                    </span>
-                  )}
-                </span>
+                <div className="flex justify-center items-center ">
+                  <span className="">
+                    {language === "en" && (
+                      <span className="text-secondary text-[20px]">
+                        Service
+                        <br />
+                        <b className="text-primary">Women’s health</b>
+                      </span>
+                    )}
+                    {language === "swe" && (
+                      <span className="text-secondary text-[20px]">
+                        Service
+                        <br />
+                        <b className="text-primary">
+                          Kvinnors  hälsa
+                        </b>
+                      </span>
+                    )}
+                  </span>
+                </div>
               </div>
             </div>
           </section>
