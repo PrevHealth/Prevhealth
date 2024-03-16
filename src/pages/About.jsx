@@ -10,7 +10,7 @@ const About = () => {
   const { language } = useLanguage();
   return (
     <>
-      <SecNav/>
+      <SecNav />
       <section className="min-h-screen  pt-16 flex flex-col-reverse lg:flex-row text-[#F4F7FA] ">
         <div className="w-full flex flex-col p-5 justify-center items-start gap-10 lg:px-32  ">
           <div>
@@ -37,13 +37,13 @@ const About = () => {
           </div>
         </div>
         <div className="w-full flex justify-center  lg:justify-end">
-          <img src="/About/about.png" alt="" />
+          <img src="/Home/home.png" alt="" />
         </div>
       </section>
       <section>
         <Career />
         <Contact />
-        <SecFooter/>
+        <SecFooter />
       </section>
     </>
   );

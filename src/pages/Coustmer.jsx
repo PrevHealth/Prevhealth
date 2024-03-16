@@ -4,6 +4,7 @@ import { CoustmerEngData, CoustmerSweData } from "../Data/CoustmerData";
 import Container from "../components/Container";
 import SecNav from "../components/SecNav";
 import { HeropageEnglishData, HeropageSwedishData } from "../Data/HeropageData";
+import SecFooter from "../components/SecFooter";
 
 const Coustmer = () => {
   const { language } = useLanguage();
@@ -199,6 +200,7 @@ const Coustmer = () => {
           </div>
         </Container>
       </section>
+      <SecFooter/>
     </div>
   );
 };
