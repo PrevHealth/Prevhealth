@@ -136,7 +136,7 @@ const Contact = () => {
                       type="text"
                       id="name"
                       required
-                      name="name"
+                      name="country"
                       value={formData.country}
                       onChange={handleChange}
                       className="mt-1 p-2 w-full border border-gray-300 rounded-md"
