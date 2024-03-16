@@ -4,11 +4,13 @@ import { useLanguage } from "../context/LanguageContext";
 import Career from "./Career";
 import Contact from "./Contact";
 import { Link } from "react-scroll";
+import SecNav from "../components/SecNav";
 const About = () => {
   const { language } = useLanguage();
   return (
     <>
-      <section className="min-h-screen  pt-16 flex flex-col-reverse lg:flex-row text-[#F4F7FA]   ">
+      <SecNav/>
+      <section className="min-h-screen  pt-16 flex flex-col-reverse lg:flex-row text-[#F4F7FA] ">
         <div className="w-full flex flex-col p-5 justify-center items-start gap-10 lg:px-32  ">
           <div>
             <h1 className="text-primary text-[48px] font-bold">

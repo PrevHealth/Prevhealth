@@ -6,14 +6,31 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import Meet from "./Meet";
-const Navbar = () => {
+
+const SecNav = () => {
   const { language, changeLanguage } = useLanguage();
+  const [show, setShow] = useState(false);
+  const handleClick = (sectionId) => {
+    setShow(false); // Close the menu
+    console.log(sectionId);
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // After a short delay, scroll to the desired section
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      console.log(section+"section");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 500); // Adjust this timeout if needed
+  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const [show, setShow] = useState(false);
+  
   const [activeSection, setActiveSection] = useState(null);
   let data;
   switch (language) {
@@ -26,9 +43,8 @@ const Navbar = () => {
     default:
       data = NavEnglishData; // Default to English if language not found
   }
-
   return (
-    <>
+    <div>
       <nav className="flex lg:px-32 px-5 bg-white fixed py-3 z-[120] border-b-[3px] w-full justify-between items-center ">
         <div>
           <NavLink onClick={scrollToTop} to="/">
@@ -43,16 +59,17 @@ const Navbar = () => {
                   {item.title}
                 </NavLink>
               ) : (
-                <Link
+                <NavLink
                   spy={true}
                   smooth={true}
                   offset={-70} // Adjust this offset to suit your layout
                   duration={500}
-                  to={item.to}
+                  to={"/"}
+                  onClick={() => handleClick(item.sectionId)}
                   className="font-medium"
                 >
                   {item.title}
-                </Link>
+                </NavLink>
               )}
               <span
                 className={`${
@@ -123,19 +140,17 @@ const Navbar = () => {
                       {item.title}
                     </NavLink>
                   ) : (
-                    <Link
+                    <NavLink
                       spy={true}
                       smooth={true}
                       offset={-100} // Adjust this offset to suit your layout
                       duration={500}
-                      to={item.to}
+                      to={"/"}
                       className="font-medium"
-                      onClick={() => {
-                        setShow(!show);
-                      }}
+                      onClick={() => handleClick(item.sectionId)}
                     >
                       {item.title}
-                    </Link>
+                    </NavLink>
                   )}
                 </div>
               ))}
@@ -148,8 +163,8 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
-export default Navbar;
+export default SecNav;

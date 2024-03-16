@@ -20,7 +20,7 @@ const Products = () => {
   }
   return (
     <Container>
-      <section className="min-h-screen">
+      <section id="product" className="min-h-screen">
         <div className="mt-10">
           {language === "en" && (
             <h1 className="fonta  text-primary ">

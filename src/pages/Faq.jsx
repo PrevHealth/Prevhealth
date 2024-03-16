@@ -22,10 +22,10 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-[#F7F7FB]">
+    <div id="faq" className="bg-[#F7F7FB]">
       <Container>
         <section className="min-h-screen">
-          <h1 className="fonta text-primary text-center pt-5">FAQ</h1>
+          <h1 className="fonta text-primary text-center pt-5">FAQs</h1>
           <div className="flex flex-col gap-8 mt-5 pb-8">
             {data.map((item) => {
               const isOpen = selectedId === item.id;

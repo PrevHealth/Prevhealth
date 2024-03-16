@@ -23,7 +23,7 @@ const PatientJourney = () => {
   }
 
   return (
-    <section className="mt-10">
+    <section id="Patient-journey" className="mt-10">
       <Container>
         <h1 className="fonta text-primary">
           {language === "en" && "Patient Journey"}
@@ -34,7 +34,7 @@ const PatientJourney = () => {
         {data.map((item, index) => {
           return (
             <>
-              <PatientJourneyCard data={item} key={item.id}/>
+              <PatientJourneyCard data={item} key={item.id} />
             </>
           );
         })}

@@ -28,7 +28,7 @@ const Caregiver = () => {
   };
 
   return (
-    <div className="mb-10">
+    <div id="Caregiver-journey" className="mb-10">
       <Container>
         <h1 className="fonta text-primary mt-5 mb-10  ">Caregiver Journey</h1>
         <div className="flex flex-col-reverse lg:flex-row gap-10">
@@ -39,8 +39,12 @@ const Caregiver = () => {
                 className="flex flex-col rounded-2xl bg-[#F7F7FB] p-2"
                 onClick={() => handleQuestionClick(index)}
               >
-                <span className="text-[24px] font-semibold text-primary">{item.question}</span>
-                {selectedQuestion === index && <span className="fontb mt-3" >{item.answer}</span>}
+                <span className="text-[24px] font-semibold text-primary">
+                  {item.question}
+                </span>
+                {selectedQuestion === index && (
+                  <span className="fontb mt-3">{item.answer}</span>
+                )}
               </div>
             ))}
           </div>

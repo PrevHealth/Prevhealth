@@ -2,6 +2,8 @@ import React from "react";
 import Container from "./Container";
 import { NavEnglishData, NavSwedishData } from "../Data/Navbardata";
 import { useLanguage } from "../context/LanguageContext";
+import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   const { language } = useLanguage();
   let data;
@@ -27,7 +29,21 @@ const Footer = () => {
                   key={index}
                   className="flex  lg:justify-center lg:items-center lg:gap-5"
                 >
-                  <p className=" font-medium  ">{item.title}</p>
+                  {item.path == "/about-us" ? (
+                    <NavLink to={item.path} className="font-medium">
+                      {item.title}
+                    </NavLink>
+                  ) : (
+                    <Link
+                      to={item.path}
+                      offset={-100}
+                      smooth={true}
+                      duration={500}
+                      className=" font-medium  "
+                    >
+                      {item.title}
+                    </Link>
+                  )}
                 </div>
               );
             })}

@@ -14,6 +14,7 @@ import CoustmerStory from "./CoustmerStory";
 const Layout = () => {
   return (
     <div className="overflow-hidden">
+      <Navbar />
       <Heropage />
 
       <Element className="product">
@@ -23,11 +24,11 @@ const Layout = () => {
       <Element className="Patient-journey">
         <PatientJourney />
       </Element>
-      <Element className="caregiver">
-      <Caregiver/>
+      <Element className="Caregiver-journey">
+        <Caregiver />
       </Element>
       <CoustmerStory />
-      <Element className="faq">
+      <Element id="faq" className="faq">
         <Faq />
       </Element>
       <Element className="contact">

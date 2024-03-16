@@ -2,6 +2,7 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { CoustmerEngData, CoustmerSweData } from "../Data/CoustmerData";
 import Container from "../components/Container";
+import SecNav from "../components/SecNav";
 
 const Coustmer = () => {
   const { language } = useLanguage();
@@ -19,8 +20,9 @@ const Coustmer = () => {
   }
 
   return (
-    <div className="min-h-screen">
-      <section className="bg-[#E3ECED] pb-5">
+    <div className="">
+    <SecNav/>
+      <section className="min-h-screen bg-[#E3ECED] pb-5">
         <Container>
           <section className="pt-16 flex lg:flex-row flex-col  gap-10">
             <div className="flex flex-col gap-8 mt-5 w-full">
@@ -77,17 +79,15 @@ const Coustmer = () => {
                       </b>
                     </span>
                   )}
-                  {
-                    language === "swe" && (
-                      <span className="text-secondary text-[20px]">
-                        Service
-                        <br />
-                        <b className="text-primary">
-                          Kvinnors <br className="hidden lg:flex" /> hälsa
-                        </b>
-                      </span>
-                    )
-                  }
+                  {language === "swe" && (
+                    <span className="text-secondary text-[20px]">
+                      Service
+                      <br />
+                      <b className="text-primary">
+                        Kvinnors <br className="hidden lg:flex" /> hälsa
+                      </b>
+                    </span>
+                  )}
                 </span>
               </div>
             </div>
@@ -168,7 +168,7 @@ const Coustmer = () => {
                   "MamaMia Hemma-appen har revolutionerat vården för 500k+ patienter under sitt första år. Den har hjälpt organisationen att spara kostnader genom förbättrad effektivitet och digital vårdleverans, vilket effektiviserar processer för vårdgivare och ger patienter möjlighet."}
               </span>
             </div>
-            <div className="flex flex-col items-end gap-5 ">
+            <div className="flex flex-col items-end gap-5 mt-5 ">
               <div className="bg-white w-fit p-3">
                 <h1 className="fonta  text-center flex flex-col ">
                   {language === "en" && "500k+"}
@@ -183,8 +183,8 @@ const Coustmer = () => {
               </div>
               <div className="bg-white w-fit flex flex-col p-3">
                 <h1 className="fonta text-center">
-                  {language === "en" && "X+"}
-                  {language === "swe" && "X+"}
+                  {language === "en" && ">40%"}
+                  {language === "swe" && ">40%"}
                 </h1>
                 <span className="fontb">
                   {language === "en" && "Costs saved by MamaMia"}
