@@ -22,7 +22,7 @@ const Heropage = () => {
   }
 
   return (
-    <section className="bg-[#E3ECED]  min-h-screen w-screen pb-5 ">
+    <section className="bg-[#E3ECED]  min-h-screen w-screen pb-10 ">
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center ">
         <div className=" flex flex-col justify-center mt-12 gap-8 w-full  p-5 lg:pl-32  ">
           <div className="">
@@ -73,7 +73,7 @@ const Heropage = () => {
           </div>
         </div>
         <div className="w-full  flex bg-blac justify-end items-center ">
-          <img src="/Home/home.webp" className="mt-20 object-cover" alt="" />
+          <img src="/Home/home.png" className="mt-20 object-cover" alt="" />
         </div>
       </div>
       <div>

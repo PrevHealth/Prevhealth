@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { NavEnglishData, NavSwedishData } from "../Data/Navbardata";
 import LanguageSelector from "./Dropdown";
@@ -6,9 +6,9 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import Meet from "./Meet";
+
 const Navbar = () => {
   const { language, changeLanguage } = useLanguage();
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -27,6 +27,46 @@ const Navbar = () => {
       data = NavEnglishData; // Default to English if language not found
   }
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = document.querySelectorAll("section");
+  //     const scrollPosition = window.scrollY + window.innerHeight / 2; // Check if the middle of the section is in the viewport
+  //     let activeSectionId = null;
+
+  //     sections.forEach((section) => {
+  //       const sectionId = section.getAttribute("id");
+  //       const top = section.offsetTop;
+  //       const bottom = top + section.offsetHeight;
+
+  //       if (scrollPosition >= top && scrollPosition < bottom) {
+  //         activeSectionId = sectionId;
+  //       }
+  //     });
+
+  //     const matchingNavItem = data.find(
+  //       (item) => item.sectionId === activeSectionId
+  //     );
+  //     setActiveSection(matchingNavItem ? matchingNavItem.id : null);
+  //   };
+
+  //   // Set initial active section
+  //   const sections = document.querySelectorAll("section");
+  //   if (sections.length > 0) {
+  //     const firstSectionId = sections[0].getAttribute("id");
+  //     const firstNavItem = data.find(
+  //       (item) => item.sectionId === firstSectionId
+  //     );
+  //     if (firstNavItem) {
+  //       setActiveSection(firstNavItem.id);
+  //     }
+  //   }
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <>
       <nav className="flex lg:px-32 px-5 bg-white fixed py-3 z-[120] border-b-[3px] w-full justify-between items-center ">
@@ -39,7 +79,12 @@ const Navbar = () => {
           {data.map((item, index) => (
             <div key={index} className="flex group flex-col">
               {item.path === "/about-us" ? (
-                <NavLink to={item.path} className="font-medium">
+                <NavLink
+                  to={item.path}
+                  className={`font-medium ${
+                    activeSection === item.id ? "active" : ""
+                  }`}
+                >
                   {item.title}
                 </NavLink>
               ) : (
@@ -49,7 +94,9 @@ const Navbar = () => {
                   offset={-70} // Adjust this offset to suit your layout
                   duration={500}
                   to={item.to}
-                  className="font-medium"
+                  className={`font-medium ${
+                    activeSection === item.id ? "active" : ""
+                  }`}
                 >
                   {item.title}
                 </Link>
@@ -139,6 +186,22 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
+              <div className="p-3">
+                <Button>
+                  <Link
+                    spy={true}
+                    smooth={true}
+                    offset={-100} // Adjust this offset to suit your layout
+                    duration={500}
+                    to={"demo"}
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    Book a Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         )}

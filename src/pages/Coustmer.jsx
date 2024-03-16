@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { CoustmerEngData, CoustmerSweData } from "../Data/CoustmerData";
 import Container from "../components/Container";
 import SecNav from "../components/SecNav";
+import { HeropageEnglishData, HeropageSwedishData } from "../Data/HeropageData";
 
 const Coustmer = () => {
   const { language } = useLanguage();
@@ -18,7 +19,17 @@ const Coustmer = () => {
     default:
       data = CoustmerEngData; // Default to English if language not found
   }
-
+  let data1;
+  switch (language) {
+    case "en":
+      data1 = HeropageEnglishData;
+      break;
+    case "swe":
+      data1 = HeropageSwedishData;
+      break;
+    default:
+      data1 = HeropageEnglishData; // Default to English if language not found
+  }
   return (
     <div className="">
       <SecNav />
@@ -82,9 +93,7 @@ const Coustmer = () => {
                       <span className="text-secondary text-[20px]">
                         Service
                         <br />
-                        <b className="text-primary">
-                          Kvinnors  hälsa
-                        </b>
+                        <b className="text-primary">Kvinnors hälsa</b>
                       </span>
                     )}
                   </span>
@@ -97,18 +106,20 @@ const Coustmer = () => {
 
       <section>
         <Container>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-10">
             {data.map((item, index) => {
               return (
                 <div
                   key={item.id}
                   className={`flex flex-col-reverse ${
                     item.id == 2 ? "lg:flex-row-reverse" : "lg:flex-row"
-                  } gap-10 mt-5`}
+                  } gap-16 mt-5`}
                 >
                   <div className="w-full flex flex-col gap-4">
                     <div>
-                      <h1 className="fonta text-primary italic">{item.heading}</h1>
+                      <h1 className="fonta text-primary italic">
+                        {item.heading}
+                      </h1>
                       <h1 className="fonta text-secondary">{item.Question1}</h1>
                     </div>
                     <div className="fontb flex flex-col gap-8">
@@ -117,7 +128,7 @@ const Coustmer = () => {
                       <span>{item.Answer3}</span>
                     </div>
                   </div>
-                  <div className="w-full flex justify-center items-center lg:items-end ">
+                  <div className="w-full lg:max-w-md flex justify-center items-center lg:items-end ">
                     <img src={item.icon} alt="" />
                   </div>
                 </div>
@@ -155,8 +166,8 @@ const Coustmer = () => {
       </section>
       <section className="bg-[#F7F7FB] pb-5 ">
         <Container>
-          <div className="flex lg:flex-row flex-col gap-10 mt-5  ">
-            <div className="w-full flex flex-col gap-5 justify-center">
+          <div className="flex lg:flex-row flex-col gap-10 mt-5 pt-10 pb-10  ">
+            <div className="w-full flex flex-col gap-5  justify-center">
               <h1 className="fonta italic mt-5 lg:mt-0 text-primary">
                 {language === "en" && "The Results"}
                 {language === "swe" && "Resultaten"}
@@ -168,28 +179,21 @@ const Coustmer = () => {
                   "MamaMia Hemma-appen har revolutionerat vården för 500k+ patienter under sitt första år. Den har hjälpt organisationen att spara kostnader genom förbättrad effektivitet och digital vårdleverans, vilket effektiviserar processer för vårdgivare och ger patienter möjlighet."}
               </span>
             </div>
-            <div className="flex flex-col items-end gap-5 mt-5 ">
-              <div className="bg-white w-fit p-3">
-                <h1 className="fonta  text-center flex flex-col ">
-                  {language === "en" && "500k+"}
-                  {language === "swe" && "500k+"}
-                </h1>
-                <span className="fontb">
-                  {language === "en" &&
-                    "Users served by the app and platform in Year 1 of operationsUsers served by the app and platform in Year 1 of operations"}
-                  {language === "swe" &&
-                    "Användare som betjänas av appen och plattformen under år 1 av verksamheten"}
-                </span>
-              </div>
-              <div className="bg-white w-fit flex flex-col p-3">
-                <h1 className="fonta text-center">
-                  {language === "en" && ">40%"}
-                  {language === "swe" && ">40%"}
-                </h1>
-                <span className="fontb">
-                  {language === "en" && "Costs saved by MamaMia"}
-                  {language === "swe" && "Kostnader som MamaMia sparade"}
-                </span>
+            <div className="flex justify-center items-center w-full flex-col gap-5 mt-5 ">
+              <div className="flex justify-between flex-col items-center gap-6   ">
+                {data1.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col w-96 items-center rounded-xl bg-white  p-3 justify-center gap-2"
+                  >
+                    <span className="text-[30px] font-bold text-primary">
+                      {item.text}
+                    </span>
+                    <span className="text-[16px] font-medium">
+                      {item.subtext}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -22,19 +22,19 @@ const Demo = () => {
     <Container>
       <section className="p-5 lg:p-10 border-[2px] rounded-xl mt-12 flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row justify-center  items-center">
         <div className="w-full  ">
-          <div className="text-[24px] font-semibold text-primary">
+          <div className="text-[24px] font-bold italic text-primary">
             {language === "en" && "Let's Revolutionize Healthcare. Together."}
             {language === "swe" && "Låt oss revolutionera vården. Tillsammans."}
           </div>
           <div className="mt-1">
             {language === "en" && (
-              <span className="font-semibold text-[24px] text-secondary ">
+              <span className="font-medium text-[24px] text-secondary ">
                 Boost Efficiency <br />
                 Reduce Costs <br /> Empower
               </span>
             )}
             {language === "swe" && (
-              <span className="font-semibold text-[24px] text-secondary ">
+              <span className="font-medium text-[24px] text-secondary ">
                 Öka effektiviteten <br />
                 Minska kostnaderna <br /> Befordra
               </span>

@@ -14,7 +14,7 @@ const PatientJourneyCard = ({ data }) => {
           <div className="flex flex-col w-full justify-center">
             <div>
               {data.title && (
-                <span className="text-primary text-[24px] font-bold ">
+                <span className="text-secondary text-[24px] font-bold ">
                   {data.title}
                 </span>
               )}

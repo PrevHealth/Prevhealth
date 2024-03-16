@@ -20,7 +20,9 @@ const Layout = () => {
       <Element className="product">
         <Products />
       </Element>
-      <Demo />
+      <Element className="demo" >
+        <Demo />
+      </Element>
       <Element className="Patient-journey">
         <PatientJourney />
       </Element>
@@ -34,6 +36,7 @@ const Layout = () => {
       <Element className="contact">
         <Contact />
       </Element>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 export const NavEnglishData = [
   {
-    title: "Product",
+    title: "Our offering",
     to: "product",
     sectionId: "product", // Added sectionId property for consistency
   },

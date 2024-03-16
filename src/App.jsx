@@ -26,7 +26,6 @@ const App = () => {
         <Route path="/Coustmer" element={<Coustmer />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <Footer />
     </>
   );
 };

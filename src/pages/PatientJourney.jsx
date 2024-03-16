@@ -23,14 +23,14 @@ const PatientJourney = () => {
   }
 
   return (
-    <section id="Patient-journey" className="mt-10">
+    <section id="Patient-journey " className=" bg-[#F7F7FB]  mt-10">
       <Container>
-        <h1 className="fonta text-primary">
+        <h1 className="fonta pt-10 text-primary">
           {language === "en" && "Patient Journey"}
           {language === "swe" && "Patientresa"}
         </h1>
       </Container>
-      <div className="mt-10 flex flex-col gap-16 ">
+      <div className="mt-10 pb-10 flex flex-col gap-16 ">
         {data.map((item, index) => {
           return (
             <>

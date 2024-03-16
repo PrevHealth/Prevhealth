@@ -5,6 +5,7 @@ import Career from "./Career";
 import Contact from "./Contact";
 import { Link } from "react-scroll";
 import SecNav from "../components/SecNav";
+import SecFooter from "../components/SecFooter";
 const About = () => {
   const { language } = useLanguage();
   return (
@@ -42,6 +43,7 @@ const About = () => {
       <section>
         <Career />
         <Contact />
+        <SecFooter/>
       </section>
     </>
   );

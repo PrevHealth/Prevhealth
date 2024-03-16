@@ -11,7 +11,7 @@ const CoustmerStory = () => {
       <Container>
         <div className="flex justify-center items-center lg:flex-row flex-col-reverse">
           <div className="flex flex-col gap-5">
-            <h1 className="fonta  ">
+            <h1 className="fonta text-primary ">
               {language === "en" && "Transforming Women's Healthcare in Sweden"}
               {language === "swe" && "Förändra kvinnors hälsovård i Sverige"}
             </h1>
@@ -24,7 +24,7 @@ const CoustmerStory = () => {
             <div>
               <Button>
                 <Link to={"/Coustmer"}>
-                  {language === "en" && "Customer story "}
+                  {language === "en" && "Customer story"}
                   {language === "swe" && "Kundberättelse"}
                 </Link>
               </Button>

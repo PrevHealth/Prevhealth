@@ -69,51 +69,46 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container className="">
-        <div className="min-h-screen overflow-hidden mt-10">
-          <h1 className="text-center fonta ">
-            {language === "en" && "Contact Us"}
-            {language === "swe" && "Kontakta oss"}
-          </h1>
-          <p className="text-center mt-5 fontb text-primary">
-            {language === "en" && "We'd love to hear from you"}
-            {language === "swe" && "Vi skulle älska att höra från dig"}
-          </p>
+        <div className="lg:min-h-screen overflow-hidden mt-10">
           <div className="flex mt-12 max-w-[1330px] lg:max-h-screen  flex-col-reverse lg:flex-row gap-5 lg:gap-0 mx-auto  ">
             <div
-              className={`lg:w-full rounded-lg  bg-[url("/Contact/contact.png")] bg-cover bg-no-repeat bg-center flex flex-col p-5 justify-center items-center`}
+              className={`lg:w-full rounded-lg lg:max-h-[45rem] bg-[url("/Contact/contact.png")] bg-cover   lg:bg-bottom bg-no-repeat  flex flex-col p-5 `}
             >
-              <div className="mt-8 mb-24">
-                {data.map((data, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="flex items-start justify-start  gap-5 p-5"
-                    >
-                      <div className="">
-                        <img src={data.icon} className="" alt="icon" />
-                      </div>
-                      <div className="">
-                        <h1 className="">
-                          {data.id === 2 && (
-                            <p>
-                              Idungränd 8, <br />
-                              187 73 Täby <br />
-                              Sweden
-                            </p>
-                          )}
-                          {data.title}
-                        </h1>
-                      </div>
+              <h1 className=" fonta ">
+                {language === "en" && "Contact Us"}
+                {language === "swe" && "Kontakta oss"}
+              </h1>
+              <p className=" mt-5 fontb text-primary">
+                {language === "en" && "We'd love to hear from you"}
+                {language === "swe" && "Vi skulle älska att höra från dig"}
+              </p>
+              <div>
+                <div className=" flex flex-col items-start gap-5 bg-blak mt-6">
+                  <div className="flex gap-3">
+                    <div>
+                      <img src="/Contact/icon1.png" alt="" />
                     </div>
-                  );
-                })}
+                    <span>contact@preveu.com</span>
+                  </div>
+                  <div className="flex gap-5">
+                    <div>
+                      <img src="/Contact/icon2.png" alt="" />
+                    </div>
+                    <span className="">
+                      Idungränd 8, <br /> 187 73 Täby <br /> Sweden
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="lg:w-full lg:max-h-[1000px] lg:p-10 ">
               <div className="lg:w-2/3  ">
                 <form onSubmit={handleSubmit} className="max-w-md mx-auto">
                   <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700">
+                    <label
+                      htmlFor="name"
+                      className="block font-bold text-gray-700"
+                    >
                       {language === "en" && "Full Name"}
                       {language === "swe" && "Fullständigt namn"}
                     </label>
@@ -128,7 +123,10 @@ const Contact = () => {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700">
+                    <label
+                      htmlFor="name"
+                      className="block font-bold text-gray-700"
+                    >
                       {language === "en" && "Country Name"}
                       {language === "swe" && "Landets namn"}
                     </label>
@@ -143,7 +141,10 @@ const Contact = () => {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="email" className="block text-gray-700">
+                    <label
+                      htmlFor="email"
+                      className="block font-bold text-gray-700"
+                    >
                       {language === "en" && "Email Address"}
                       {language === "swe" && "E-postadress"}
                     </label>
@@ -161,7 +162,7 @@ const Contact = () => {
                   <div className="mb-4">
                     <label
                       htmlFor="companyName"
-                      className="block text-gray-700"
+                      className="block font-bold text-gray-700"
                     >
                       {language === "en" && "Company Name"}
                       {language === "swe" && "Företagsnamn"}
@@ -177,7 +178,10 @@ const Contact = () => {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="message" className="block text-gray-700">
+                    <label
+                      htmlFor="message"
+                      className="block font-bold text-gray-700"
+                    >
                       {language === "en" && "Message"}
                       {language === "swe" && "Meddelande"}
                     </label>

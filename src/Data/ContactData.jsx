@@ -24,7 +24,6 @@ export const ContactSwedishData = [
   {
     id: 2,
     heading: "Adress",
-    title: "PrevHealth AB",
     icon: "/Contact/icon2.png",
     // subtext: "Kungsgatan 8, 111 43 Stockholm, Sverige",
     image: "/Contact/icon2.svg",
