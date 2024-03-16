@@ -77,8 +77,8 @@ const Footer = () => {
           <div className="flex justify-between px-3 p-1">
             <span>
               <p className="text-center  text-primary">
-                {language === "en" && "© 2021 All rights reserved"}
-                {language === "swe" && "© 2021 Alla rättigheter förbehållna"}
+                {language === "en" && "© 2024 All rights reserved"}
+                {language === "swe" && "© 2024 Alla rättigheter förbehållna"}
               </p>
             </span>
             <span>

@@ -110,7 +110,7 @@ const Navbar = () => {
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col font-semibold text-black text-[22px] p-3 "
+                  className="flex flex-col  font-semibold text-black text-[22px] p-3 "
                 >
                   {item.path === "/about-us" ? (
                     <NavLink
@@ -129,7 +129,7 @@ const Navbar = () => {
                       offset={-100} // Adjust this offset to suit your layout
                       duration={500}
                       to={item.to}
-                      className="font-medium"
+                      className=""
                       onClick={() => {
                         setShow(!show);
                       }}
@@ -139,11 +139,6 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-              <div className="p-3">
-                <Button>
-                  <Meet />
-                </Button>
-              </div>
             </div>
           </div>
         )}

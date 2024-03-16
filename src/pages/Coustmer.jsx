@@ -108,7 +108,7 @@ const Coustmer = () => {
                 >
                   <div className="w-full flex flex-col gap-4">
                     <div>
-                      <h1 className="fonta italic">{item.heading}</h1>
+                      <h1 className="fonta text-primary italic">{item.heading}</h1>
                       <h1 className="fonta text-secondary">{item.Question1}</h1>
                     </div>
                     <div className="fontb flex flex-col gap-8">
@@ -155,7 +155,7 @@ const Coustmer = () => {
       </section>
       <section className="bg-[#F7F7FB] pb-5 ">
         <Container>
-          <div className="flex lg:flex-row flex-col gap-10  ">
+          <div className="flex lg:flex-row flex-col gap-10 mt-5  ">
             <div className="w-full flex flex-col gap-5 justify-center">
               <h1 className="fonta italic mt-5 lg:mt-0 text-primary">
                 {language === "en" && "The Results"}

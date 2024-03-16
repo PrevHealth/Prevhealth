@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const CoustmerStory = () => {
   const { language } = useLanguage();
   return (
-    <section className="mb-10 min-h-screen">
+    <section className="mb-10 ">
       <Container>
         <div className="flex justify-center items-center lg:flex-row flex-col-reverse">
           <div className="flex flex-col gap-5">

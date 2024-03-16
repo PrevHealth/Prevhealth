@@ -1,7 +1,7 @@
 export const HeropageEnglishData = [
   {
     text: "500k+",
-    subtext: "Patients served in year 1 of operations",
+    subtext: "Patients served in First year of operations",
   },
   {
     text: "x5",
