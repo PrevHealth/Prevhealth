@@ -17,7 +17,9 @@ const Footer = () => {
     default:
       data = NavEnglishData; // Default to English if language not found
   }
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="bg-[#E3ECED] mt-12 ">
       <Container>
@@ -50,7 +52,9 @@ const Footer = () => {
           </div>
           <div className="p-2 flex flex-col mb-9 lg:mb-0  lg:flex-row justify-between">
             <div>
-              <img src="/logo/logo.png" alt="" />
+              <NavLink onClick={scrollToTop} to={"/"}>
+                <img src="/logo/logo.png" alt="" />
+              </NavLink>
             </div>
             <div className="flex lg:flex-row flex-col-reverse gap-5 mt-9 lg:mt-0 lg:gap-16">
               <div className="flex gap-2">

@@ -29,7 +29,9 @@ const Layout = () => {
       <Element className="Caregiver-journey">
         <Caregiver />
       </Element>
-      <CoustmerStory />
+      <Element className="Customer-journey">
+        <CoustmerStory />
+      </Element>
       <Element id="faq" className="faq">
         <Faq />
       </Element>

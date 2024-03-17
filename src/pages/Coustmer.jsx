@@ -139,7 +139,7 @@ const Coustmer = () => {
       </section>
       <section>
         <Container>
-          <div className="flex justify-center items-start bg-[#FDC2B5] lg:p-10 p-6 mt-5 mb-5 fontb rounded-lg  ">
+          <div className="flex justify-center items-start bg-[#FDC2B5] lg:p-10 p-6 mt-10  fontb rounded-lg  ">
             {language === "en" &&
               "With a range of services available, including OBGYN care, pregnancy care, and child care, females across Sweden can receive comprehensive healthcare support when they need it, where they need it."}
             {language === "swe" &&
@@ -149,7 +149,7 @@ const Coustmer = () => {
       </section>
       <section>
         <Container>
-          <div className="flex lg:flex-row flex-col-reverse gap-10 mt-10">
+          <div className="flex lg:flex-row flex-col-reverse gap-10 mt-24 lg:mt-10">
             <div className="flex justify-center fontb items-center w-full">
               <span>
                 {language === "en" &&
