@@ -4,7 +4,7 @@ export const CaregiverEngData = [
     question: "Tailored Caregiver Interface",
     answer:
       "Tailor the caregiver interface to your organization's needs. Our modular platform allows customization, ensuring essential modules are utilized. Caregivers navigate seamlessly with intuitive interfaces for efficient workflow integration.",
-    Image: "/caregiver/icon1.webp",
+    Image: "/caregiver/icon1.png",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const CaregiverSweData = [
     question: "Anpassat Vårdgivarinterface",
     answer:
       "Anpassa vårdgivarinterfacet efter din organisations behov. Vår modulära plattform tillåter anpassning, vilket säkerställer att väsentliga moduler används. Vårdgivare navigerar sömlöst med intuitiva gränssnitt för effektiv integrering av arbetsflöden.",
-    Image: "/caregiver/icon1.webp",
+    Image: "/caregiver/icon1.png",
   },
   {
     id: 2,

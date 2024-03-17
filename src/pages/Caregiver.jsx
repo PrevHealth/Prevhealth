@@ -60,16 +60,16 @@ const Caregiver = () => {
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="flex w-[70vw] flex-col rounded-xl bg-[#F7F7FB] p-3"
+                  className="flex w-[70vw] flex-col gap-2 rounded-xl bg-[#F7F7FB] p-3"
                 >
                   <div>
                     <img src={item.Image} className=" object-cover" alt="" />
                   </div>
 
-                  <span className="text-[24px] font-semibold text-primary">
+                  <span className="text-[20px] font-semibold text-primary">
                     {item.question}
                   </span>
-                  <span className="fontb mt-3">{item.answer}</span>
+                  <span className="mt-3">{item.answer}</span>
                 </div>
               ))}
             </div>
