@@ -22,9 +22,9 @@ const About = () => {
           <div>
             <span className="text-[22px] font-medium text-primary leading-10 ">
               {language === "en" &&
-                "PrevHealth, a company built by European medical professionals, is committed to driving healthcare forward throughout Europe. We understand the unique needs of the European healthcare industry and are dedicated to providing solutions that prioritise efficiency, patient-centered care, and a seamless digital experience.  Our foundation in AI integration empowers organizations to evolve their current healthcare offerings and meet the future of European healthcare head-on."}
+                "PrevHealth, a company built by European medical professionals and technologists, is committed to driving healthcare forward throughout Europe. We understand the unique needs of the European healthcare industry and are dedicated to providing solutions that prioritise efficiency, patient-centered care, and a seamless digital experience. Our foundation in AI integration empowers organizations to evolve their current healthcare offerings and meet the future of European healthcare head-on."}
               {language === "swe" &&
-                "PrevHealth, ett företag byggt av europeiska medicinska yrkesverksamma, är engagerat i att driva hälso- och sjukvården framåt i hela Europa. Vi förstår de unika behoven i den europeiska hälso- och sjukvårdsbranschen och är dedikerade till att tillhandahålla lösningar som prioriterar effektivitet, patientcentrerad vård och en sömlös digital upplevelse. Vår grund i AI-integration ger organisationer möjlighet att utveckla sina nuvarande hälso- och sjukvårdserbjudanden och möta framtiden för europeisk hälso- och sjukvård."}
+                "PrevHealth, ett företag byggt av europeiska medicinska yrkesverksamma och teknologer, är engagerat i att driva hälso- och sjukvården framåt i hela Europa. Vi förstår de unika behoven i den europeiska hälso- och sjukvårdsbranschen och är dedikerade till att tillhandahålla lösningar som prioriterar effektivitet, patientcentrerad vård och en sömlös digital upplevelse. Vår grund i AI-integration ger organisationer möjlighet att utveckla sina nuvarande hälso- och sjukvårdsutbud och möta framtiden för europeisk hälso- och sjukvård."}
             </span>
           </div>
           <div>
