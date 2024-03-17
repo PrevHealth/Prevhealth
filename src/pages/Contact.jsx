@@ -72,7 +72,7 @@ const Contact = () => {
         <div className="lg:min-h-screen overflow-hidden mt-10">
           <div className="flex mt-12 max-w-[1330px] lg:max-h-screen  flex-col-reverse lg:flex-row gap-5 lg:gap-0 mx-auto  ">
             <div
-              className={`lg:w-full rounded-lg lg:max-h-[45rem] bg-[url("/Contact/contact.png")] bg-cover lg:bg-bottom bg-no-repeat flex flex-col p-5 `}
+              className={`lg:w-full w-full h-screen rounded-lg lg:max-h-[45rem] bg-[url("/Contact/contact.png")] bg-cover lg:bg-bottom bg-no-repeat flex flex-col p-5 `}
             >
               <h1 className=" fonta ">
                 {language === "en" && "Contact Us"}
@@ -95,7 +95,11 @@ const Contact = () => {
                       <img src="/Contact/icon2.png" alt="" />
                     </div>
                     <span className="">
-                      Idungränd 8,<br/>187 73 Täby<br/>Sweden
+                      Idungränd 8,
+                      <br />
+                      187 73 Täby
+                      <br />
+                      Sweden
                     </span>
                   </div>
                 </div>
