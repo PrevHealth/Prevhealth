@@ -8,7 +8,7 @@ import {
 import PatientJourneyCard from "../components/PatientJourneyCard";
 
 const PatientJourney = () => {
-  const { language, changeLanguage } = useLanguage();
+  const { language} = useLanguage();
   let data;
 
   switch (language) {
@@ -26,7 +26,7 @@ const PatientJourney = () => {
     <section id="patient" className=" min-h-screen bg-[#F7F7FB]  mt-10">
       <Container>
         <h1 className="fonta pt-10 text-primary">
-          {language === "en" && "Patient Journey"}
+          {language === "en" && "Patient"}
           {language === "swe" && "Patientresa"}
         </h1>
       </Container>

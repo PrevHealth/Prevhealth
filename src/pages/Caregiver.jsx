@@ -32,7 +32,7 @@ const Caregiver = () => {
       <section id="Caregiver-journey" className="mb-10">
         <Container>
           <h1 className="fonta text-primary mt-10 mb-10  ">
-            Caregiver Journey
+            {language === "en" ? "Caregiver" : "Vårdgivare"}
           </h1>
           <div className="lg:flex hidden flex-col-reverse lg:flex-row gap-10">
             <div className="w-full flex gap-10 flex-col">
