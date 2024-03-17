@@ -1,7 +1,7 @@
 export const ProductEnglishData = [
   {
     id: 1,
-    heading: "All-in-one Platform:",
+    heading: "All-in-one Platform",
     title:
       "PrevHealth's B2B SaaS platform streamlines workflows, boosts efficiency, and empowers exceptional patient care.",
     subtext:
@@ -10,7 +10,7 @@ export const ProductEnglishData = [
   },
   {
     id: 2,
-    heading: "Customizable for You:",
+    heading: "Customizable for You",
     title:
       "Our experienced services team tailors the platform to your specific needs. We don't believe in one-size-fits-all solutions.",
     subtext:
@@ -22,7 +22,7 @@ export const ProductEnglishData = [
 export const ProductSwedishData = [
   {
     id: 1,
-    heading: "All-in-one Platform:",
+    heading: "All-in-one Platform",
     title:
       "PrevHealth's B2B SaaS platform streamlines workflows, boosts efficiency, and empowers exceptional patient care.",
     subtext:
@@ -31,7 +31,7 @@ export const ProductSwedishData = [
   },
   {
     id: 1,
-    heading: "Customizable for You:",
+    heading: "Customizable for You",
     title:
       "Our experienced services team tailors the platform to your specific needs. We don't believe in one-size-fits-all solutions.",
     subtext:

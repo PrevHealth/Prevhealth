@@ -8,7 +8,6 @@ import SecFooter from "../components/SecFooter";
 
 const Coustmer = () => {
   const { language } = useLanguage();
-
   let data;
   switch (language) {
     case "en":
