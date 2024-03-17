@@ -42,7 +42,7 @@ const Caregiver = () => {
                   className="flex flex-col rounded-xl bg-[#F7F7FB] p-3"
                   onClick={() => handleQuestionClick(index)}
                 >
-                  <span className="text-[22px] font-semibold text-primary">
+                  <span className="text-[22px] font-semibold text-secondary">
                     {item.question}
                   </span>
                   {selectedQuestion === index && (
@@ -66,7 +66,7 @@ const Caregiver = () => {
                     <img src={item.Image} className=" object-cover" alt="" />
                   </div>
 
-                  <span className="text-[20px] font-semibold text-primary">
+                  <span className="text-[20px] font-semibold text-secondary">
                     {item.question}
                   </span>
                   <span className="mt-3">{item.answer}</span>
