@@ -22,9 +22,9 @@ const Faq = () => {
   };
 
   return (
-    <div id="faq" className="bg-[#F7F7FB]">
+    <section id="faq" className="min-h-screen bg-[#F7F7FB]">
       <Container>
-        <section className="min-h-screen">
+        <section className="">
           <h1 className="fonta text-primary text-center pt-5">FAQs</h1>
           <div className="flex flex-col gap-8 mt-5 pb-8">
             {data.map((item) => {
@@ -60,7 +60,7 @@ const Faq = () => {
           </div>
         </section>
       </Container>
-    </div>
+    </section>
   );
 };
 

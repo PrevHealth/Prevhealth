@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const PatientJourneyCard = ({ data }) => {
   return (
-    <div className="bg-[#F7F7FB]">
+    <section className="bg-[#F7F7FB]">
       <Container>
         <section
           className={`flex flex-col-reverse ${
@@ -36,7 +36,7 @@ const PatientJourneyCard = ({ data }) => {
           </div>
         </section>
       </Container>
-    </div>
+    </section>
   );
 };
 

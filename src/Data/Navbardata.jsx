@@ -6,8 +6,8 @@ export const NavEnglishData = [
   },
   {
     title: "Patient",
-    to: "Patient-journey",
-    sectionId: "Patient-journey", // Added sectionId property for consistency
+    to: "patient",
+    sectionId: "patient", // Added sectionId property for consistency
   },
   {
     title: "Caregiver",
@@ -15,9 +15,9 @@ export const NavEnglishData = [
     sectionId: "Caregiver-journey", // Added sectionId property for consistency
   },
   {
-    title:"Coustomer story",
-    to:"Customer-journey",
-    sectionId:"Customer-journey",
+    title: "Case studies",
+    to: "Customer-journey",
+    sectionId: "Customer-journey",
   },
   {
     title: "FAQs",
@@ -39,8 +39,8 @@ export const NavSwedishData = [
   },
   {
     title: "Patientresa",
-    to: "Patient-journey",
-    sectionId: "Patient-journey", // Add sectionId property for consistency
+    to: "patient",
+    sectionId: "patient", // Add sectionId property for consistency
   },
   {
     title: "Vårdgivarresa",

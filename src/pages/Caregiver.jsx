@@ -29,7 +29,7 @@ const Caregiver = () => {
 
   return (
     <>
-      <div id="Caregiver-journey" className="mb-10">
+      <section id="Caregiver-journey" className="mb-10">
         <Container>
           <h1 className="fonta text-primary mt-10 mb-10  ">
             Caregiver Journey
@@ -75,7 +75,7 @@ const Caregiver = () => {
             </div>
           </div>
         </Container>
-      </div>
+      </section>
     </>
   );
 };

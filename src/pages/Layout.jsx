@@ -16,14 +16,13 @@ const Layout = () => {
     <div className="overflow-hidden">
       <Navbar />
       <Heropage />
-
       <Element className="product">
         <Products />
       </Element>
-      <Element className="demo" >
+      <Element className="demo">
         <Demo />
       </Element>
-      <Element className="Patient-journey">
+      <Element  className="Patient">
         <PatientJourney />
       </Element>
       <Element className="Caregiver-journey">
@@ -32,7 +31,7 @@ const Layout = () => {
       <Element className="Customer-journey">
         <CoustmerStory />
       </Element>
-      <Element id="faq" className="faq">
+      <Element className="faq">
         <Faq />
       </Element>
       <Element className="contact">

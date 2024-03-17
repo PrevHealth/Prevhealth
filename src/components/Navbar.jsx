@@ -15,57 +15,46 @@ const Navbar = () => {
 
   const [show, setShow] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
-  let data;
-  switch (language) {
-    case "en":
-      data = NavEnglishData;
-      break;
-    case "swe":
-      data = NavSwedishData;
-      break;
-    default:
-      data = NavEnglishData; // Default to English if language not found
-  }
+  const data = language === "swe" ? NavSwedishData : NavEnglishData;
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const sections = document.querySelectorAll("section");
-  //     const scrollPosition = window.scrollY + window.innerHeight / 2; // Check if the middle of the section is in the viewport
-  //     let activeSectionId = null;
+ useEffect(() => {
+   const handleScroll = () => {
+     const sections = document.querySelectorAll("section");
+     const scrollPosition = window.scrollY + window.innerHeight / 2; // Check if the middle of the section is in the viewport
+     let activeSectionId = null;
 
-  //     sections.forEach((section) => {
-  //       const sectionId = section.getAttribute("id");
-  //       const top = section.offsetTop;
-  //       const bottom = top + section.offsetHeight;
+     sections.forEach((section) => {
+       const sectionId = section.getAttribute("id");
+       const top = section.offsetTop;
+       const bottom = top + section.offsetHeight;
 
-  //       if (scrollPosition >= top && scrollPosition < bottom) {
-  //         activeSectionId = sectionId;
-  //       }
-  //     });
+       if (scrollPosition >= top && scrollPosition < bottom) {
+         activeSectionId = sectionId;
+       }
+     });
 
-  //     const matchingNavItem = data.find(
-  //       (item) => item.sectionId === activeSectionId
-  //     );
-  //     setActiveSection(matchingNavItem ? matchingNavItem.id : null);
-  //   };
+     setActiveSection(activeSectionId);
+   };
 
-  //   // Set initial active section
-  //   const sections = document.querySelectorAll("section");
-  //   if (sections.length > 0) {
-  //     const firstSectionId = sections[0].getAttribute("id");
-  //     const firstNavItem = data.find(
-  //       (item) => item.sectionId === firstSectionId
-  //     );
-  //     if (firstNavItem) {
-  //       setActiveSection(firstNavItem.id);
-  //     }
-  //   }
+   // Set initial active section
+   const sections = document.querySelectorAll("section");
+   if (sections.length > 0) {
+     const firstSectionId = sections[0].getAttribute("id");
+     const firstNavItem = data.find(
+       (item) => item.sectionId === firstSectionId
+     );
+     if (firstNavItem) {
+       setActiveSection(firstNavItem.id);
+     }
+   }
 
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+   window.addEventListener("scroll", handleScroll);
+   return () => {
+     window.removeEventListener("scroll", handleScroll);
+   };
+ }, [data]);
+
+  console.log(`Active section: ${activeSection}`);
 
   return (
     <>
@@ -93,9 +82,9 @@ const Navbar = () => {
                   smooth={true}
                   offset={-70} // Adjust this offset to suit your layout
                   duration={500}
-                  to={item.to}
+                  to={item.sectionId} // Use sectionId for smooth scrolling
                   className={`font-medium ${
-                    activeSection === item.id ? "active" : ""
+                    activeSection === item.sectionId ? "" : ""
                   }`}
                 >
                   {item.title}
@@ -103,7 +92,7 @@ const Navbar = () => {
               )}
               <span
                 className={`${
-                  activeSection === item.id ? "w-full" : ""
+                  activeSection === item.sectionId ? "w-full" : ""
                 } h-[3px] bg-primary w-0 transition-all duration-300 group-hover:w-full`}
               ></span>
             </div>
@@ -175,7 +164,7 @@ const Navbar = () => {
                       smooth={true}
                       offset={-100} // Adjust this offset to suit your layout
                       duration={500}
-                      to={item.to}
+                      to={item.to} // Use to for smooth scrolling
                       className=""
                       onClick={() => {
                         setShow(!show);
@@ -193,7 +182,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-100} // Adjust this offset to suit your layout
                     duration={500}
-                    to={"demo"}
+                    to={"demo"} // Use to for smooth scrolling
                     onClick={() => {
                       setShow(!show);
                     }}
