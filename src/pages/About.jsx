@@ -27,14 +27,6 @@ const About = () => {
                 "PrevHealth, ett företag byggt av europeiska medicinska yrkesverksamma och teknologer, är engagerat i att driva hälso- och sjukvården framåt i hela Europa. Vi förstår de unika behoven i den europeiska hälso- och sjukvårdsbranschen och är dedikerade till att tillhandahålla lösningar som prioriterar effektivitet, patientcentrerad vård och en sömlös digital upplevelse. Vår grund i AI-integration ger organisationer möjlighet att utveckla sina nuvarande hälso- och sjukvårdsutbud och möta framtiden för europeisk hälso- och sjukvård."}
             </span>
           </div>
-          <div>
-            <Button>
-              <Link to="contact" smooth={true} offset={-100} duration={500}>
-                {language === "en" && "Contact Us"}
-                {language === "swe" && "Kontakta oss"}
-              </Link>{" "}
-            </Button>
-          </div>
         </div>
         <div className="w-full flex justify-center  lg:justify-end">
           <img src="/Home/home.png" alt="" />
