@@ -22,7 +22,7 @@ const Layout = () => {
       <Element className="demo">
         <Demo />
       </Element>
-      <Element  className="Patient">
+      <Element className="Patient">
         <PatientJourney />
       </Element>
       <Element className="Caregiver-journey">

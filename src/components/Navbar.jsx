@@ -17,42 +17,26 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);
   const data = language === "swe" ? NavSwedishData : NavEnglishData;
 
- useEffect(() => {
-   const handleScroll = () => {
-     const sections = document.querySelectorAll("section");
-     const scrollPosition = window.scrollY + window.innerHeight / 2; // Check if the middle of the section is in the viewport
-     let activeSectionId = null;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const sections = document.querySelectorAll("section");
 
-     sections.forEach((section) => {
-       const sectionId = section.getAttribute("id");
-       const top = section.offsetTop;
-       const bottom = top + section.offsetHeight;
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
 
-       if (scrollPosition >= top && scrollPosition < bottom) {
-         activeSectionId = sectionId;
-       }
-     });
+        if (scrollPosition >= top && scrollPosition < bottom) {
+          setActiveSection(section.id);
+        }
+      });
+    };
 
-     setActiveSection(activeSectionId);
-   };
-
-   // Set initial active section
-   const sections = document.querySelectorAll("section");
-   if (sections.length > 0) {
-     const firstSectionId = sections[0].getAttribute("id");
-     const firstNavItem = data.find(
-       (item) => item.sectionId === firstSectionId
-     );
-     if (firstNavItem) {
-       setActiveSection(firstNavItem.id);
-     }
-   }
-
-   window.addEventListener("scroll", handleScroll);
-   return () => {
-     window.removeEventListener("scroll", handleScroll);
-   };
- }, [data]);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   console.log(`Active section: ${activeSection}`);
 

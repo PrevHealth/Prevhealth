@@ -7,6 +7,7 @@ const PatientJourneyCard = ({ data }) => {
     <section className="bg-[#F7F7FB]">
       <Container>
         <section
+          id="patient"
           className={`flex flex-col-reverse ${
             data.id % 2 == 0 ? "lg:flex-row-reverse  " : "lg:flex-row"
           } `}

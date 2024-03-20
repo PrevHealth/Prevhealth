@@ -155,11 +155,6 @@ const SecNav = () => {
                   )}
                 </div>
               ))}
-              <div className="p-3">
-                <Button>
-                  <Meet />
-                </Button>
-              </div>
             </div>
           </div>
         )}
