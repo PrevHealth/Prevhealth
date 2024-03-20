@@ -19,7 +19,7 @@ const CoustmerStory = () => {
               {language === "en" &&
                 "Streamlining healthcare delivery, saving time and resources for providers while ensuring prompt, high-quality care for patients."}
               {language === "swe" &&
-                "Effektivisering av hälsovårdsleverans, sparande av tid och resurser för vårdgiv are samtid"}
+                "Effektivare hälsovård, bättre patientupplevelse och nöjdare personal."}
             </span>
             <div>
               <Button>

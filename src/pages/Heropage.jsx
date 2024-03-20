@@ -58,9 +58,9 @@ const Heropage = () => {
               <span className="font-medium">
                 PrevHealth ger vårdgivare möjlighet att leverera <br />{" "}
                 exceptionell vård. Vår B2B-plattform effektiviserar <br />{" "}
-                arbetsflöden, optimerar resurser och personaliserar <br />{" "}
-                patientupplevelsen. Lås upp kraften i AI för ett <br />{" "}
-                framtidssäkrat vård-ekosystem.
+                arbetsflöden, effektiviserar arbetsflöden, optimerar
+                resursanvändning, och gör patientupplevelser personligare.
+                PrevHealth framtidssäkrar och förbättrar vården genom AI.
               </span>
             )}
           </div>

@@ -80,7 +80,8 @@ const Contact = () => {
               </h1>
               <p className=" mt-5 fontb text-primary">
                 {language === "en" && "We'd love to hear from you"}
-                {language === "swe" && "Vi skulle älska att höra från dig"}
+                {language === "swe" &&
+                  "Kontakta oss för en diskussion kring hur vi kan hjälpa dig"}
               </p>
               <div>
                 <div className=" flex flex-col items-start gap-5 bg-blak mt-6">

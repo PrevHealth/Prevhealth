@@ -29,7 +29,7 @@ const Products = () => {
           )}
           {language === "swe" && (
             <h1 className="fonta  text-primary">
-              Kraftfulla Healthtech-lösningar.Skräddarsytt tillvägagångssätt
+              Kraftfulla Healthtech-lösningar. Skräddarsytt tillvägagångssätt
             </h1>
           )}
         </div>

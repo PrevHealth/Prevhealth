@@ -36,7 +36,7 @@ const Demo = () => {
             {language === "swe" && (
               <span className="font-medium text-[24px] text-secondary ">
                 Öka effektiviteten <br />
-                Minska kostnaderna <br /> Befordra
+                Minska kostnaderna <br /> Stärka
               </span>
             )}
           </div>

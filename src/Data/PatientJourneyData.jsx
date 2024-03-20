@@ -45,16 +45,16 @@ export const PatientJourneySwedishData = [
   },
   {
     id: 3,
-    title: "24/7 Vårdanslutningar",
+    title: "Tillgänglighet 24/7",
     icon: "/PatientJourney/icon3.webp",
     subtext:
-      "Patienter kan ansluta till vårdgivare när som helst, var som helst via chatt, samtal eller videosamtal genom vår plattform",
+      "Genom vår plattform kan patienter kontakta vårdgivare närsomhelst, varsomhelst via chatt, samtal eller videosamtal.",
   },
   {
     id: 4,
     title: "Allt-i-ett Hälso- och sjukvårdshubb",
     icon: "/PatientJourney/icon4.webp",
     subtext:
-      "Få tillgång till flera hälso- och sjukvårdstjänster från din vårdgivare på ett och samma ställe. Från konsultationer till läkemedelsspårning finns allt patienterna behöver i appen. Vår pillspårare gör det enkelt att hantera mediciner, så att patienterna enkelt kan följa sina behandlingsplaner.",
+      "Få tillgång till flera hälso- och sjukvårdstjänster från din vårdgivare på ett och samma ställe. Från konsultationer till läkemedelstjänster finns allt en patient behöver i appen. Vår läkemedelshanterarare gör det enkelt för patienten att hantera sitt läkemedel och följa sin behandlingsplan.",
   },
 ];
