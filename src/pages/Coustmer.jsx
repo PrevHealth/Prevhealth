@@ -31,7 +31,7 @@ const Coustmer = () => {
       data1 = HeropageEnglishData; // Default to English if language not found
   }
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <SecNav />
       <section className="min-h-screen bg-[#E3ECED] pb-5">
         <Container>
