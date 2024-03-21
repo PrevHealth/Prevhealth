@@ -4,7 +4,7 @@ export const FaqEnglishData = [
     question:
       "How does PrevHealth ensure data security and compliance with regulations like GDPR?",
     answer:
-      "PrevHealth prioritizes data security and regulatory compliance like GDPR through state of art data security architecture in the platform, secure login options, encryption at rest and in motion, and strict access controls.",
+      "PrevHealth prioritizes data security and regulatory compliance like GDPR through state of art data security architecture in the platform, secure login options, encryption, and strict access controls.",
   },
   {
     id: 2,

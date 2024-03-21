@@ -21,7 +21,7 @@ const Demo = () => {
   return (
     <Container>
       <section className="p-5 lg:p-10 border-[2px] rounded-xl mt-12 flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row justify-center  items-center">
-        <div className="w-full  ">
+        <div className="w-full flex flex-col ">
           <div className="text-[24px] font-bold italic text-primary">
             {language === "en" && "Let's Revolutionize Healthcare. Together."}
             {language === "swe" && "Låt oss revolutionera vården. Tillsammans."}
@@ -30,23 +30,31 @@ const Demo = () => {
             {language === "en" && (
               <span className="font-medium text-[24px] text-secondary ">
                 Boost Efficiency <br />
-                Reduce Costs <br /> Empower
+                Reduce Costs <br />
+                Empower
               </span>
             )}
             {language === "swe" && (
               <span className="font-medium text-[24px] text-secondary ">
                 Öka effektiviteten <br />
-                Minska kostnaderna <br /> Stärka
+                Minska kostnaderna <br />
+                Stärka
               </span>
             )}
           </div>
-          <div className="mt-3">
+          <div className="mt-10">
+            <span className="text-[22px]  font-normal">
+              We provide 24/7 support for caregivers and healthcare
+              organisations. For any questions, please contact us.
+            </span>
+          </div>
+          <div className="mt-5">
             <Button>
               <Meet />
             </Button>
           </div>
         </div>
-        <div className="w-full flex lg:justify-end justify-center  ">
+        <div className="w-full flex lg:justify-end justify-center">
           <img src="/Demo/icon1.png" alt="" />
         </div>
       </section>

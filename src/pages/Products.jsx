@@ -24,7 +24,7 @@ const Products = () => {
         <div className="mt-10">
           {language === "en" && (
             <h1 className="fonta  text-primary ">
-              Powerful Healthtech Solutions.Tailored Approach
+              Powerful Healthtech Solutions. Tailored Approach
             </h1>
           )}
           {language === "swe" && (
