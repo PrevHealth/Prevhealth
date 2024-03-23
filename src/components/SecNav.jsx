@@ -9,7 +9,7 @@ import Meet from "./Meet";
 
 const SecNav = () => {
   const location = useLocation();
-  console.log(location.pathname);
+
   const { language, changeLanguage } = useLanguage();
   const [show, setShow] = useState(false);
   const handleClick = (sectionId) => {
@@ -75,7 +75,9 @@ const SecNav = () => {
                 </NavLink>
               )}
               <span
-                className={` h-[3px] bg-primary w-0 transition-all duration-300 group-hover:w-full`}
+                className={`${
+                  location.pathname == item.path ? "w-full" : ""
+                }  h-[3px] bg-primary w-0 transition-all duration-300 group-hover:w-full`}
               ></span>
             </div>
           ))}
