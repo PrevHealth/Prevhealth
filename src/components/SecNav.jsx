@@ -14,14 +14,14 @@ const SecNav = () => {
   const [show, setShow] = useState(false);
   const handleClick = (sectionId) => {
     setShow(false); // Close the menu
-    console.log(sectionId);
+    // console.log(sectionId);
     // Scroll to the top of the page
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     // After a short delay, scroll to the desired section
     setTimeout(() => {
       const section = document.getElementById(sectionId);
-      console.log(section + "section");
+      // console.log(section + "section");
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }

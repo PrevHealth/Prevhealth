@@ -38,8 +38,6 @@ const Navbar = () => {
     };
   }, []);
 
-  console.log(`Active section: ${activeSection}`);
-
   return (
     <>
       <nav className="flex lg:px-32 px-5 bg-white fixed py-3 z-[120] border-b-[3px] w-full justify-between items-center ">

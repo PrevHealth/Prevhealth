@@ -30,7 +30,7 @@ const Contact = () => {
       .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, formData, YOUR_USER_ID)
       .then(
         (response) => {
-          console.log("Email sent successfully!", response);
+          // console.log("Email sent successfully!", response);
           // Clear form fields after successful submission
           setShowToast(true);
           setFormData({
@@ -45,7 +45,7 @@ const Contact = () => {
           }, 3000);
         },
         (error) => {
-          console.error("Email sending failed:", error);
+          // console.error("Email sending failed:", error);
           setShowError(true);
           setTimeout(() => {
             setShowError(false);
