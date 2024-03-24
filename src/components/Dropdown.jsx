@@ -18,8 +18,8 @@ const LanguageSelector = ({ language, changeLanguage }) => {
   }, []);
 
   const languages = [
-    { code: "en", name: "English", flag: "gb" },
     { code: "swe", name: "Swedish", flag: "se" },
+    { code: "en", name: "English", flag: "gb" },
     // { code: "es", name: "Español", flag: "es" },
     // { code: "fr", name: "Français", flag: "fr" },
     // { code: "de", name: "Deutsch", flag: "de" },
