@@ -24,7 +24,7 @@ const CoustmerStory = () => {
             <div>
               <Button>
                 <Link
-                  to={"/Coustmer"}
+                  to={"/Customer"}
                   className="flex justify-center  text-white items-center"
                 >
                   {language === "en" && "Customer story"}
@@ -33,8 +33,15 @@ const CoustmerStory = () => {
               </Button>
             </div>
           </div>
-          <div className="w-full flex lg:justify-end">
-            <img src="/CoustmerStory/icon1.png" alt="" />
+          <div className="lg:max-w-[50%] flex lg:justify-end">
+            <img
+              src={
+                language === "swe"
+                  ? "/CoustmerStory/swe.png"
+                  : "/CoustmerStory/eng.png"
+              }
+              alt=""
+            />
           </div>
         </div>
       </Container>

@@ -73,7 +73,16 @@ const Heropage = () => {
           </div>
         </div>
         <div className="w-full  flex bg-blac justify-end items-center ">
-          <img src="/Home/home.png" className="mt-20 object-cover" alt="" />
+         {
+          language === "en" && (
+            <img src="/Home/home.png" className="mt-20 object-cover" alt="" />
+          )         
+         }
+          {
+          language === "swe" && (
+            <img src="/Home/home_swe.png" className="mt-20 object-cover" alt="" />
+          )
+          }
         </div>
       </div>
       <div>

@@ -9,7 +9,7 @@ export const CoustmerEngData = [
       "Previously, patients faced complexity in accessing MamaMia's services due to the disjointed systems in place. This prompted the development of the MamaMia Hemma app and platform to streamline the process.",
     Answer3:
       "Our customized platform addressed these challenges by providing a unified, user-friendly interface, simplifying access to MamaMia's services for patients while improving efficiency in service delivery.",
-    icon: "/Coustmer/icon1.png",
+    icon: "/Coustmer/icon1_eng.png",
   },
   {
     id: 2,
@@ -32,13 +32,13 @@ export const CoustmerSweData = [
       "Tidigare ställdes patienter inför komplexitet när de skulle få tillgång till MamaMias tjänster på grund av de olika system som fanns på plats. Detta ledde till utvecklingen av MamaMia Hemma-appen och plattformen för att effektivisera processen.",
     Answer3:
       "Vår anpassade plattform adresserade dessa utmaningar genom att tillhandahålla ett enhetligt, användarvänligt gränssnitt, vilket förenklade tillgången till MamaMias tjänster för patienter samtidigt som effektiviteten i tjänsteleveransen förbättrades.",
-    icon: "/Coustmer/icon1.png",
+    icon: "/Coustmer/icon1_swe.png",
   },
   {
     id: 2,
     Question1: "Hur fungerar MamaMia Hemma?",
     heading: "Lösningen",
-    icon: "/Coustmer/icon2.png",
+    icon: "/Coustmer/icon2_swe.png",
     Answer1:
       "Vår plattform erbjuder MamaMias patienter bekvämligheten att få tillgång till digitala hälsovårdstjänster från sina hem genom en mobilapp. Patienter kan enkelt dela sina omfattande hälsobakgrunder inom appen för att schemalägga konsultationer med vårdgivare och söka stöd.",
   },
